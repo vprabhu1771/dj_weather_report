@@ -10,5 +10,21 @@ Home
 {% block content %}
 
 
+<p>{{weather_api}}</p>
+<br>
+
+<p>{{weather_api.location.country}}</p>
+<br>
+
+<p>{{weather_api.location.region}}</p>
+<br>
+
+<p>{{weather_api.location.timezone_id}}</p>
+<br>
+
+<p>{{weather_api.location.lat}}</p>
+<br>
+
+<p>{{weather_api.location.lon}}</p>
 
 {% endblock %}
