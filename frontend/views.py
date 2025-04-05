@@ -11,14 +11,15 @@ import os
 from django.shortcuts import render
 from dotenv import load_dotenv
 
+import requests
+import json
+
 load_dotenv()  # take environment variables
 
 # Access the variables
 API_KEY = os.getenv('API_KEY')
 
 def home(request):
-    import requests
-    import json
 
     if request.method == 'POST':
 
@@ -32,7 +33,7 @@ def home(request):
         weather_api = json.loads(weather_request.text)
 
         print(weather_api)
-        return render(request, "frontend/home.html", {'weather_api': weather_api})
+        return render(request, "frontend/home2.html", {'weather_api': weather_api})
 
     else:
 
@@ -41,4 +42,4 @@ def home(request):
         weather_request = requests.get(url)
         weather_api = json.loads(weather_request.text)
 
-        return render(request, "frontend/home.html", {'weather_api': weather_api})
+        return render(request, "frontend/home2.html", {'weather_api': weather_api})
