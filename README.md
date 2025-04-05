@@ -12,6 +12,14 @@ python -m venv venv
 pip install django
 ```
 
+```commandline
+django-admin startproject config .
+```
+
+```
+python manage.py startapp frontend
+```
+
 ```
 https://pypi.org/project/python-dotenv/
 ```
