@@ -1,6 +1,6 @@
 # from django.shortcuts import render
 
-import os
+# import os
 
 # Create your views here.
 # def home(request):
@@ -11,6 +11,7 @@ import os
 from django.shortcuts import render
 from dotenv import load_dotenv
 
+import os
 import requests
 import json
 
