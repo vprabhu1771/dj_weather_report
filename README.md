@@ -31,3 +31,6 @@ pip install python-dotenv
 ```commandline
 pip install requests
 ```
+
+![Image](screenshot/1.PNG)
+![Image](screenshot/2.PNG)
